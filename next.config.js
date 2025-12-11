@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  output: 'export', // tells Next.js to export static HTML
+  experimental: {
+    appDir: true
+  },
+  output: undefined // remove 'export' if present
 };
+
 module.exports = nextConfig;
